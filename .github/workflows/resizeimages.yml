@@ -11,5 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: echo "Running resize script"
-    - run: sudo apt install heif-gdk-pixbuf
+    - run: sudo add-apt-repository ppa:strukturag/libheif
+    - run: sudo apt-get install libheif-examples
+    - run: sudo apt-get update
     

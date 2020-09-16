@@ -8,4 +8,5 @@ cd jpegs
 for file in *.jpg; do
   convert "$file" -rotate 180 "${file%.JPG}"_rotated.JPG
   rm "$file"
+  mv "${file%.JPG}"_rotated.JPG "$file" 
 done

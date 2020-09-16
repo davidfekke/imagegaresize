@@ -14,4 +14,5 @@ jobs:
     - run: sudo add-apt-repository ppa:strukturag/libheif
     - run: sudo apt-get install libheif-examples
     - run: sudo apt-get update
+    - run: heif-convert IMG_0910.HEIC IMG_0910.HEIC.jpg
     

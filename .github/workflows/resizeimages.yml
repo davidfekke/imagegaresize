@@ -14,8 +14,9 @@ jobs:
     - run: sudo add-apt-repository ppa:strukturag/libheif
     - run: sudo apt-get install libheif-examples
     - run: sudo apt-get update
-    - run: heif-convert IMG_0910.HEIC IMG_0910.HEIC.jpg
+    #- run: heif-convert IMG_0910.HEIC IMG_0910.HEIC.jpg
+    - run: ./convert.sh
     - uses: actions/upload-artifact@v2
       with:
-        name: IMG_0910.HEIC
-        path: IMG_0910.HEIC.jpg
+        name: jpegs
+        path: jpegs

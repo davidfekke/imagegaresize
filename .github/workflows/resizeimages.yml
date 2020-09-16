@@ -11,5 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: echo "Running resize script"
-    - name: Image Convert Action
     - run: mogrify -format jpg *.heic

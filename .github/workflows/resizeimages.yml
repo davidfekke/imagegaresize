@@ -15,4 +15,7 @@ jobs:
     - run: sudo apt-get install libheif-examples
     - run: sudo apt-get update
     - run: heif-convert IMG_0910.HEIC IMG_0910.HEIC.jpg
-    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: IMG_0910.HEIC
+        path: IMG_0910.HEIC.jpg

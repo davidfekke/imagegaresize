@@ -11,4 +11,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: echo "Running resize script"
-    - run: mogrify -format jpg *.heic
+    - run: apt install heif-gdk-pixbuf
+    
